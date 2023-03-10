@@ -1,11 +1,11 @@
 //! Nota: instale la extensien better comands de visual studio code para mejor experiencia, si no lo tiene no hay problema
-// 1.-Este "Curso" esta todo comeentado para leerlo pero puede decomentar quitando los "//" y ver que hace el codigo
+// 1.-Este "Curso" esta todo comentado para leerlo pero puede decomentar quitando los "//" y ver que hace el codigo
 // 2.- Este curso se divide en capitulos cada capitulo tiene distintos temas
 //TODO: las pruebas son de color azul con el "?";
 //TODO: Los ejemplos de una definicion extensa son de rojo con "!"
 //TODO: Las observaciones o puntos a recalcar son con de color naranja con "TODO"
 //TODO: Los separedores de capitulos son de verde con "*"
-//TODO: Codigo que no es la mejoer forma de escribirlo son con un tachado color cafe que se identifica con doble slash bar de esta manera"// //" (Usado en comparaciones)
+//TODO: Codigo que no es la mejor forma de escribirlo son con un tachado color cafe que se identifica con doble slash bar de esta manera"// //" (Usado en comparaciones)
 /*
     *:
     ?:
@@ -104,7 +104,7 @@
 //? 	}
 //? }
 //* For
-// For usa el bloque de codigo solo pare eso y en parametro creas el contador lo aumentas a diferencia de while que tenias que crear el contador fuera y aumentarlo dentro del bloque de codigo
+// For usa el bloque de codigo solo para eso y en el parametro creas el contador lo aumentas a diferencia de while que tenias que crear el contador fuera y aumentarlo dentro del bloque de codigo
 //? for (let i = 0; i < 1000; i++) {
 //? 	document.write(i);
 //? 	if (i == 10) {
@@ -124,15 +124,15 @@
 //? 	'tiranosaurio rex',
 //? ];
 
+//* con for of puedo imprimir el valor como tal de los objetos
+//! Es decir que esto:
 // con for in puedo imprimir o tomar el indice de esos valores
 //! Es decir que esto: no imprimer un nombre si no un numero
 //? for (let animal in animales) {
-//? 	document.write(animal + '<br>');
+//?     document.write(animal + '<br>');
 //? }
 
 //? document.write('<br>');
-//* con for of puedo imprimir el valor como tal de los objetos
-//! Es decir que esto:
 //? for (let animal of animales) {
 //? 	document.write(animal + '<br>');
 //? }
@@ -224,4 +224,25 @@
 // // document.write(perro.info + '<br>');
 // // document.write(loro.info + '<br>');
 //*Capitulo 4
-//* Metodos y metodos de arrays
+//* Metodos y metodos de cadenas
+// Las cadenas de texto puede parecer simple pero tienen muchos metodos que la llevan al siguente nivel veremos algunos de estos:
+
+// Concate() este metodo concatena osea une un una cadena de texto con otra
+//? let cadena = '!Hola ';
+//? let cadena2 = 'mundo¡';
+
+//? let resultado = cadena.concat(cadena2);
+//? document.write(resultado);
+// startsWith no devuelve un booleano(true o false) indicandonos si los primeros caracteres son iguales y endsWith hace lo contrario
+//? let cadena = 'Hora de la mañana';
+//? let cadena2 = 'Hora';
+//esto nos devuelve true con starsWith
+//? let resultado = cadena.startsWith(cadena2);
+//? document.write(resultado);
+///////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//? let cadena = 'Hora de la mañana';
+//? let cadena2 = 'Hora';
+//esto nos devuelve false con endsWith
+//? let resultado = cadena.endsWith(cadena2);
+//? document.write(resultado);
